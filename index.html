@@ -1,17 +1,37 @@
 <!DOCTYPE html>
 <html>
-    <head>
-<script type = "text/javascript">
-  function generate (){
-alert(document.getElementById('name').value)
-}
-  </script>
-    </head>
-    <body>
-       <label for="name">Name (4 to 8 characters):</label>
 
-      <input type="text" id="name" name="name" required
-             minlength="4" maxlength="8" size="10">
-      <input id="clickMe" type="button" value="clickme" onclick="generate();" />
-    </body>
+<head>
+  <script src="scripts/main.js"></script>
+</head>
+
+<body>
+  Base URL: https://api.businesscentral.dynamics.com/v2.0 </br>
+
+  <label for="tenant">Your tenant:</label>
+  <input type="text" id="tenant" name="tenant" onchange="generate();"></br>
+
+  <label for="environment">Your environment:</label>
+  <input type="text" id="environment" name="environment" value="Sandbox" onchange="generate();"></br>
+
+  <label for="publisher">Your API publisher:</label>
+  <input type="text" id="publisher" name="publisher" onchange="generate();"></br>
+
+  <label for="group">Your API group:</label>
+  <input type="text" id="group" name="group" onchange="generate();"></br>
+
+  <label for="verison">Your API verison:</label>
+  <input type="text" id="verison" name="verison" onchange="generate();"></br>
+
+  <label for="company">Your company id:</label>
+  <input type="text" id="company" name="company" onchange="generate();"></br>
+
+  <label for="endpoint">Your endpoint:</label>
+  <input type="text" id="endpoint" name="endpoint" onchange="generate();"></br>
+
+  <label for="URL">URL:</label>
+  <input type="text" id="URL" name="URL" readonly>
+
+</body>
+
 </html>
