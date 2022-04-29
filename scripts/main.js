@@ -20,7 +20,7 @@ function generate() {
 }
 
 function generateSaasSandbox() {
-    addInput('base', 'Base URL:');
+    addInput('base', 'Base URL:', 'https://api.businesscentral.dynamics.com/v2.0');
     addInput('tenant', 'Tenant:');
     addInput('environment', 'Environment:', 'Sandbox');
     addInput('publisher', 'Publisher:');
@@ -40,7 +40,7 @@ function generateSaasSandbox() {
 }
 
 function generateSaasProduction() {
-    addInput('base', 'Base URL:');
+    addInput('base', 'Base URL:', 'https://api.businesscentral.dynamics.com/v2.0');
     addInput('tenant', 'Tenant:');
     addInput('environment', 'Environment:', 'Production');
     addInput('publisher', 'Publisher:');
