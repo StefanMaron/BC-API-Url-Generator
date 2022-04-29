@@ -6,12 +6,30 @@
 </head>
 
 <body>
+  <label for="API_Type">Choose type of API:</label>
+  <select name="API_Type" id="API_Type" onchange="clearAllFields();generate();">
+    <option value="APISaasSandbox">API Saas Sandbox</option>
+    <option value="APISaasProduction">API Saas Production</option>
+    <option value="APIOnPrem">API OnPrem</option>
+  </select>
+  </br></br>
+
+  <div id="content">
+
+  </div>
+  <!--
   <label for="base">Base URL:</label>
   <input type="text" id="base" name="base" onchange="generate();" value="https://api.businesscentral.dynamics.com/v2.0"
     style="width:300px"></br>
 
   <label for="tenant">Your tenant:</label>
   <input type="text" id="tenant" name="tenant" onchange="generate();"></br>
+
+  <label for="port">Your port:</label>
+  <input type="text" id="port" name="port" onchange="generate();"></br>
+
+  <label for="serverInstance">Your server instance:</label>
+  <input type="text" id="serverInstance" name="serverInstance" onchange="generate();"></br>
 
   <label for="environment">Your environment:</label>
   <input type="text" id="environment" name="environment" value="Sandbox" onchange="generate();"></br>
@@ -33,7 +51,7 @@
 
   <label for="URL">URL:</label>
   <input type="text" id="URL" name="URL" readonly>
-
+-->
 </body>
 
 </html>
